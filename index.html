@@ -65,9 +65,8 @@
 
     /* HERO PHOTO */
     .hero-photo-link { text-decoration: none; flex-shrink: 0; }
-    .hero-photo-wrap { position: relative; width: 250px; height: 250px; border-radius: 50%; cursor: pointer; transition: transform 0.3s; transform: translateY(-50px);
-}
-    .hero-photo-wrap:hover { transform: scale(1.04); }
+    .hero-photo-wrap {position: relative; width: 250px; height: 250px; border-radius: 50%; cursor: pointer; transition: transform 0.3s; position: relative; top: -120px; }
+    .hero-photo-wrap:hover { transform: translateY(-5px) scale(1.04); }
     .hero-photo-wrap::before { content: ''; position: absolute; inset: -4px; border-radius: 50%; background: conic-gradient(var(--accent) 0deg 120deg, var(--accent-2) 120deg 240deg, var(--accent) 240deg 360deg); z-index: -1; animation: spin 8s linear infinite; }
     .hero-photo-wrap::after { content: ''; position: absolute; inset: 3px; border-radius: 50%; background: #fff; z-index: -1; }
     .hero-photo { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block; background: var(--accent-light); }
